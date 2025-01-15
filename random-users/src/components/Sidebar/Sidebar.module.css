@@ -1,0 +1,36 @@
+.container {
+  background-color: #eaeaea;
+  padding: 10px;
+  display: flex;
+  height: 100vh;
+  width: 150px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 48px; /* Chiều cao tiêu chuẩn của Ant Design Button */
+  border-radius: 8px; /* Tùy chỉnh border-radius */
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #f0f0f0 !important; /* Hiệu ứng hover */
+  color: #1890ff !important;
+}
+
+.active {
+  background-color: #1890ff !important; /* Màu active */
+  color: #fff !important;
+  font-weight: bold;
+}

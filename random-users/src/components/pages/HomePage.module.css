@@ -1,0 +1,39 @@
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto auto 1fr; /* Header, Filters và Content */
+  grid-template-areas:
+    "header header"
+    "sidebar filters"
+    "sidebar content";
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.header {
+  grid-area: header;
+  background-color: #ffffff;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+
+.filters {
+  grid-area: filters;
+  padding: 10px;
+}
+
+.content {
+  grid-area: content;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.userList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
